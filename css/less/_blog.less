@@ -1,0 +1,60 @@
+.body-blog {
+	.content {
+		background:none;
+		box-shadow:none;
+		border-top:none;
+		position: relative;
+		z-index: 2;
+		margin:50px auto 0;
+		max-width:900px;
+		width:90%;
+		background:@white;
+		border:1px solid fade(@black, 25%);
+		border-bottom:0;
+		box-shadow:0 0 5px fade(@black, 25%);
+		.box-sizing;
+		padding: 75px;
+		
+		h1 {
+			&:extend(h3);
+			text-align:center;
+			border-bottom:1px solid fade(@black, 10%);
+		}
+		
+		article {
+			margin:0 auto;
+			max-width:auto;
+			width:auto;
+			background:none;
+			border:0;
+			box-shadow:none;
+			.box-sizing;
+			padding: 50px;
+			border-bottom:1px dotted fade(@black, 25%);
+			.clearfix;
+			
+			h2 {
+				text-align:left;
+				margin:0;
+			}
+			
+			.meta {
+				color:@grayD1;
+			}
+			
+			img {
+				float:left;
+				margin:5px 20px 5px 0;
+				padding:15px;
+				background:@white;
+				border:1px solid fade(@black,40%);
+				box-shadow:0 0 5px fade(@black, 25%);
+			}
+			
+			&:last-child {
+				border:0;
+				padding-bottom:0;
+			}
+		}
+	}
+}

@@ -1,0 +1,86 @@
+.content {
+	background:@white url(../img/texture-paper.jpg);
+	box-shadow:0 0 5px fade(@black, 50%);
+	border-top:1px @gray solid;
+	position: relative;
+	z-index: 2;
+	
+	article {
+		margin:0 auto;
+		max-width:900px;
+		width:90%;
+		background:@white;
+		border-left:1px solid fade(@black, 10%);
+		border-right:1px solid fade(@black, 10%);
+		box-shadow:0 0 5px fade(@black, 25%);
+		.box-sizing;
+		padding: 75px;
+		
+		h2 {
+			text-align:center;
+			font-size:3em;
+			margin-bottom:20px;
+		}
+		
+		.article-section {
+			padding:45px;
+			border-top:1px solid fade(@black, 10%);
+			.clearfix;
+			
+			&:last-child {
+				padding-bottom:0;
+			}
+		}
+	}
+	
+	&.about {
+		.address {
+			.clearfix;
+			margin-bottom:50px;
+			
+			iframe {
+				float:right;
+				margin-left:20px;
+			}
+		}
+	}
+	
+	&.menu {
+		dl {
+			float:left;
+			margin-left:10%;
+			width:45%;
+			
+			dt {
+				&:extend(h3);
+			}
+			
+			dd {
+				&:extend(p);
+				margin:0 0 1.25em;
+				
+				&:last-child {
+					margin:0;
+				}
+			}
+			
+			&:first-child {
+				margin-left:0;
+			}
+		}
+		
+		.article-section {
+			&:last-child {
+				padding-left:0;
+				padding-right:0;
+				text-align:center;
+			}
+		}
+	}
+}
+
+.map {
+	iframe {
+		display:block;
+	}
+}

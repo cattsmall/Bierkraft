@@ -1,0 +1,58 @@
+footer {
+	color:#fff;
+	text-shadow:0 1px 0 rgba(0,0,0,.8);
+	background:url(../img/texture-wood.jpg);
+	box-shadow:0 0 5px fade(@black, 50%);
+	position:relative;
+	z-index:2;
+
+	.visit-us {
+		position:relative;
+		color:@white;
+		font-family:@displaycopy;
+		font-size:2.5em;
+		z-index:2;
+		text-align:center;
+		padding:18px 15px 13px;
+		letter-spacing:0.1em;
+		background:fade(@grayD1,50%);
+		border-top:1px solid fade(@black, 50%);
+	}
+	
+	.footer-wrapper {
+		box-shadow:inset 0 5px 5px fade(@black, 50%);
+		padding:20px 5% 15px;
+		max-width:900px;
+		margin:0 auto;
+		.clearfix;
+		
+		section {
+			float:left;
+			padding:20px 1.5%;
+			
+			p {
+				font-size:1em;
+			}
+		}
+		
+		.footer-info {
+			width:30%;
+		}
+	
+		.footer-policy {
+			width:63%;
+		}
+	
+		.footer-credits {
+			margin:10px 0 0;
+			border-top:1px solid #333;
+			padding:20px 0 0;
+			width:100%;
+		}
+	
+		.footer-policy p, .footer-credits p {
+			margin:10px 0;
+		}
+	}
+
+}

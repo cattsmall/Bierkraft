@@ -1,0 +1,63 @@
+html, body {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+body {
+	font-family: @bodycopy;
+	background:no-repeat fixed;
+	background-size: cover;	
+}
+
+h1, h2, h3 {
+	font-family: @displaycopy;
+	margin:0;
+	padding:0;
+	font-weight:normal;
+}
+
+h1 {
+	font-size:3em;
+	letter-spacing:0.05em;
+}
+
+h2 {
+	font-size:1.75em;
+}
+
+h3 {
+	font-size:1.65em;
+	letter-spacing:0.1em;
+	color:@grayD1;
+}
+
+h4 {
+	font-size:1.15em;
+	margin-top:0;
+}
+
+p {
+	font-size:1.15em;
+	margin:0 0 .9em;
+	padding:0;
+	line-height:1.5em;
+	
+	&:last-child {
+		margin:0;
+	}
+}
+
+a {
+	text-decoration:none;
+	color: @green;
+	.transition;
+}
+
+img {max-width:100%;}
+
+footer {
+	h3 {
+		color: @gray;
+	}
+}
